@@ -31,3 +31,73 @@ h1 {
 p {
 	text-align: center;
 }
+
+
+.menu-underline{ 
+	
+	width:100%; 
+	display:block; 
+	float:left;
+}
+
+.menu-underline a{
+
+    text-decoration: none;
+    color:#3b3b3b;
+    text-align: center;
+    width: 130px;
+    padding:0.5em 0;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+
+}
+.menu-underline a:hover{
+
+    text-decoration:none;
+   
+}
+
+.menu-underline .underline{
+    width: 130px;
+    height:6px;
+    border-radius:3px; 
+    background-color: #ffcd0a;
+    transition: all .4s ease-in-out;
+
+
+}
+.menu-underline a:nth-child(1):hover~.underline{
+    transition: all .4s ease-in-out;
+    
+}
+
+.menu-underline a:nth-child(1):hover{
+    color: #ffcd0a;
+}
+ 
+.menu-underline a:nth-child(2):hover{
+    color: #00cad2;
+}
+.menu-underline a:nth-child(3):hover{
+    color: #2cc800;
+}
+.menu-underline a:nth-child(4):hover{
+    color: #c8c8c8;
+}
+
+.menu-underline a:nth-child(2):hover~.underline{
+    transform:translate(135px);
+    transition: all .4s ease-in-out;
+    background-color: #00cad2;
+}
+.menu-underline a:nth-child(3):hover~.underline{
+    transform:translate(270px);
+    transition: all .4s ease-in-out;
+    background-color: #2cc800;
+}
+.menu-underline a:nth-child(4):hover~.underline{
+    transform:translate(405px);
+    transition: all .4s ease-in-out;
+    background-color: #c8c8c8;
+}
